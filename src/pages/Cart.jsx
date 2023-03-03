@@ -10,8 +10,10 @@ import {
   Subtotal,
   total,
 } from "../redux/cartSlice";
+import {  useNavigate } from "react-router-dom";
 
 const Cart = () => {
+  const navigate = useNavigate()
   const dispatch = useDispatch();
 
   const cart = useSelector((state) => state.cart.cart);
@@ -40,7 +42,12 @@ const Cart = () => {
       <div className="pl-14 pr-14 ">
         <div>
           <h1 className="text-grey mt-[50px]">
-            HOME/<span className="text-dark">SHOPPING CART</span>
+          <span className="cursor-pointer"
+            onClick={() => {
+              navigate("/");
+            }}>
+            HOME/
+          </span><span className="text-dark cursor-pointer">SHOPPING CART</span>
           </h1>
         </div>
         <div>
@@ -96,7 +103,7 @@ const Cart = () => {
 
           <div className="mt-[100px]">
             <div>
-              <h1 className="font-display text-[34px] font-black">CART</h1>
+              <h1 className="font-display text-[34px] font-black">Cart Totals</h1>
             </div>
             <div className="flex justify-between font-display w-[440px] mt-[20px] border-b-[2px] border-grey h-[40px]">
               <h1 className=" text-[18px] font-medium text-grey ">Subtotal</h1>
@@ -115,7 +122,7 @@ const Cart = () => {
               </p>
             </div>
             <div>
-              <button className="  w-[280px] bg-secondary text-white h-[50px]">
+              <button className="  w-[280px] bg-secondary text-white h-[50px]" onClick={()=>{navigate("/checkout")}}>
                 PROCEED TO CHECKOUT
               </button>
             </div>

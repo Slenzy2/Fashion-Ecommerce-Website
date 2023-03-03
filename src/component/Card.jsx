@@ -3,11 +3,7 @@ import React from "react";
 import { Store } from "./product";
 import { useSelector, useDispatch } from "react-redux";
 import { add } from "../redux/cartSlice";
-import {
-  remove,
-  increaseQuantity,
-  decreaseQuantity,
-} from "../redux/cartSlice";
+
 
 const Card = ({item}) => {
   const dispatch = useDispatch();
@@ -25,7 +21,7 @@ const Card = ({item}) => {
               {item.Description}
             </p>
             <p className="font-display font-bold text-[16px] text-blue">
-              {item.Price}
+              ${item.Price}.00
             </p>
           </div>
        

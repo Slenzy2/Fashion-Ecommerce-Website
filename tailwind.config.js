@@ -18,8 +18,9 @@ module.exports = {
      "dark":"#000000",
      "lightGrey":"#FBFBFB",
      "divider":"#E8E8E8",
-     "darktext":"#3A3939"
-     
+     "darktext":"#3A3939",
+     "star":"#D6763C",
+     "back":"#EBEBEB"
     },
 
     fontFamily: {

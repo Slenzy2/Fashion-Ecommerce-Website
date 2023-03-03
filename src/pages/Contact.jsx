@@ -23,7 +23,7 @@ const Contact = () => {
           <div className="mt-[60px]">
             <div className="flex gap-[20px]">
               <div className="flex flex-col text-grey">
-                <label htmlFor="Email" className="text-grey font-medium">Name</label>
+                <label htmlFor="Email" className="text-grey  text-[12px] font-semibold">Name</label>
                 <input
                   id="Email"
                   type="email"
@@ -31,7 +31,7 @@ const Contact = () => {
                 />
               </div>
               <div className="flex flex-col">
-                <label htmlFor="Name" className="text-grey font-medium">Email</label>
+                <label htmlFor="Name" className="text-grey  text-[12px] font-semibold">Email</label>
                 <input
                   id="Name"
                   type="email"
@@ -40,7 +40,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="mt-[50px]">
-              <label htmlFor="Text" className="text-grey font-medium">Text</label>
+              <label htmlFor="Text" className="text-grey  text-[12px] font-semibold">Text</label>
               <input
                 id="Text"
                 type="text"

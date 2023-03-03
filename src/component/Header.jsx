@@ -13,22 +13,22 @@ const Header = () => {
   return (
     <div className="flex items-center justify-between pt-10 pr-14 pl-14 h-32">
       <div>
-        <h1 className="font-display text-5xl">NorthStar</h1>
+        <h1 className="font-display text-5xl font-medium">NorthStar</h1>
       </div>
-      <div className="flex gap-7 font-Arimo font-bold text-[14px] mr-80 pt-[20px]">
-        <p
+      <div className="flex gap-7 font-Arimo font-bold text-[14px] mr-[500px] pt-[20px]">
+        <p className='cursor-pointer'
           onClick={() => {
             navigate("/");
           }}>
           HOME
         </p>
-        <p
+        <p className='cursor-pointer'
           onClick={() => {
             navigate("/about");
           }}>
           ABOUT
         </p>
-        <p
+        <p className='cursor-pointer'
           onClick={() => {
             navigate("/contact");
           }}>
