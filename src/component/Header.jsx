@@ -37,10 +37,10 @@ const Header = () => {
       </div>
       <div className="flex items-center gap-5">
         <img src={account} alt="nav-icons" />
-        <div className="relative " >
-          <img src={Cart} alt="nav-icons" onClick={()=>{
+        <div className="relative "  onClick={()=>{
             navigate("/cart")
-          }}/>
+          }}>
+          <img src={Cart} alt="nav-icons" />
           <div className="absolute bottom-3 left-3 bg-blue rounded-full w-4 h-4" ><p className="ml-1 text-xs  text-white">{cart.length}</p></div>
         </div>
 

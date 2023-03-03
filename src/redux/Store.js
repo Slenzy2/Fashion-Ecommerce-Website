@@ -6,3 +6,8 @@ export const store = configureStore({
     cart: cartSlice,
   },
 });
+
+
+  
+  
+  

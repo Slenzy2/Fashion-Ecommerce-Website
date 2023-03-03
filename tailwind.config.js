@@ -17,7 +17,8 @@ module.exports = {
      "black":"#1D1D1D",
      "dark":"#000000",
      "lightGrey":"#FBFBFB",
-     "divider":"#E8E8E8"
+     "divider":"#E8E8E8",
+     "darktext":"#3A3939"
      
     },
 
