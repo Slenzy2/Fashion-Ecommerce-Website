@@ -6,12 +6,14 @@ import Header from "./component/Header";
 import Card from "./component/Cards";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
+import { Store } from "./component/product";
+import ProductDetails from "./pages/ProductDetails";
 
 
 
 function App() {
   return (
-    <div >
+    <div>
       <Header/>
       <Routes>
         <Route path="/" element={<Home/>}/>
@@ -19,7 +21,7 @@ function App() {
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/cart" element={<Cart/>}/>
         <Route path="/checkout" element={<Checkout/>}/>
-        
+        <Route path="/description/:id" element={<ProductDetails/>}/>     
       </Routes>
     </div>
   );

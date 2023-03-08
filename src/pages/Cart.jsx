@@ -12,6 +12,8 @@ import {
 } from "../redux/cartSlice";
 import {  useNavigate } from "react-router-dom";
 
+// const list= [{Product},{Price},{Quantity},{Total}]
+
 const Cart = () => {
   const navigate = useNavigate()
   const dispatch = useDispatch();
@@ -39,7 +41,7 @@ const Cart = () => {
 
   return (
     <div>
-      <div className="pl-14 pr-14 ">
+      <div className="px-14 ">
         <div>
           <h1 className="text-grey mt-[50px]">
           <span className="cursor-pointer"
