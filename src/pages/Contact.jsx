@@ -4,7 +4,7 @@ import Footer from "../component/Footer";
 const Contact = () => {
   return (
     <div>
-      <div className="bg-[url('./Assets/cont.png')] h-[340px]">
+      <div className="bg-[ur l('./Assets/cont.png')] h-[340px]">
         <h1 className="text-white font-black text-[34px] font-display pt-[260px] pl-14">
           CONTACT US
         </h1>
@@ -63,8 +63,7 @@ const Contact = () => {
               Get In Touch
             </h1>
             <p className="font-light mt-[20px] text-grey">
-              You can get in touch with us on this provided<br></br> email.
-            
+              You can get in touch with us on this provided<br></br> email.          
             </p>
             <p className="font-light mt-[20px] text-grey">  Email: hmjawad087@gmail.com</p>
           </div>
